@@ -1,103 +1,123 @@
-import Image from "next/image";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div>
+      <div className="max-w-6xl mx-auto p-4">
+        {/* Intro Section */}
+        <div>
+          <p className="text-lg leading-relaxed text-gray-700 mb-6">
+            As a self-taught web developer, I have hands-on experience creating
+            full websites from the ground up — from layout and styling to
+            interactive features and backend logic. My core skills include HTML,
+            CSS, JavaScript, React, and Node.js.
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        {/* Technologies Section */}
+        <div className="bg-gray-100 py-4 px-4 rounded">
+          <h2 className="font-bold text-xl mb-4">
+            Technologies I Use
+            <span className="block flex-grow h-1 bg-indigo-200 rounded w-[270px]"></span>
+          </h2>
+
+          <ul className="flex flex-wrap gap-4">
+            <li className="flex items-center gap-2 px-4 py-2 rounded shadow-lg font-bold bg-white text-xl">
+              <i className="fab fa-html5 fa-2x text-orange-500"></i> HTML
+            </li>
+            <li className="flex items-center gap-2 px-4 py-2 rounded shadow-lg font-bold bg-white text-xl">
+              <i className="fab fa-css3-alt fa-2x text-blue-500"></i> CSS
+            </li>
+            <li className="flex items-center gap-2 px-4 py-2 rounded shadow-lg font-bold bg-white   text-xl">
+              Tailwind CSS
+            </li>
+            <li className="flex items-center gap-2 px-4 py-2 rounded shadow-lg font-bold bg-white text-xl">
+              <i className="fab fa-js fa-2x text-yellow-500"></i> JavaScript
+            </li>
+            <li className="flex items-center gap-2 px-4 py-2 rounded shadow-lg font-bold bg-white text-xl">
+              <i className="fab fa-react fa-2x text-blue-400"></i> React
+            </li>
+            <li className="flex items-center gap-2 px-4 py-2 rounded shadow-lg font-bold bg-white text-xl">
+              Next.js
+            </li>
+            <li className="flex items-center gap-2 px-4 py-2 rounded shadow-lg font-bold bg-white text-xl">
+              TypeScript
+            </li>
+            <li className="flex items-center gap-2 px-4 py-2 rounded shadow-lg font-bold bg-white text-xl">
+              <i className="fab fa-node-js fa-2x text-green-600"></i> Node.js
+            </li>
+            <li className="flex items-center gap-2 px-4 py-2 rounded shadow-lg font-bold bg-white text-xl">
+              Express.js
+            </li>
+            <li className="flex items-center gap-2 px-4 py-2 rounded shadow-lg font-bold bg-white text-xl">
+              SQL
+            </li>
+          </ul>
+        </div>
+
+        {/* Tools Section */}
+        <div className="bg-gray-100 py-4 px-4 rounded my-4">
+          <h2 className="font-bold text-xl mb-4">
+            Tools I Use
+            <span className="block flex-grow h-1 bg-indigo-200 rounded w-[270px]"></span>
+          </h2>
+          <ul className="flex flex-wrap gap-4">
+            <li className="flex items-center gap-2 px-4 py-2 rounded shadow-lg font-bold bg-white text-xl">
+              VS Code
+            </li>
+            <li className="flex items-center gap-2 px-4 py-2 rounded shadow-lg font-bold bg-white text-xl">
+              <i className="fab fa-chrome fa-2x text-blue-500"></i> Chrome
+              DevTools
+            </li>
+            <li className="flex items-center gap-2 px-4 py-2 rounded shadow-lg font-bold bg-white text-xl">
+              Postman
+            </li>
+            <li className="flex items-center gap-2 px-4 py-2 rounded shadow-lg font-bold bg-white text-xl">
+              <i className="fab fa-git fa-2x text-orange-500"></i> Git
+            </li>
+            <li className="flex items-center gap-2 px-4 py-2 rounded shadow-lg font-bold bg-white text-xl">
+              <i className="fab fa-github fa-2x text-black"></i> GitHub
+            </li>
+            <li className="flex items-center gap-2 px-4 py-2 rounded shadow-lg font-bold bg-white text-xl">
+              Vercel
+            </li>
+            <li className="flex items-center gap-2 px-4 py-2 rounded shadow-lg font-bold bg-white text-xl">
+              Render
+            </li>
+          </ul>
+        </div>
+
+        {/* AI Tools Section */}
+        <div className="bg-gray-100 py-4 px-4 rounded">
+          <h2 className="font-bold text-xl mb-4">
+            AI Tools I Use
+            <span className="block flex-grow h-1 bg-indigo-200 rounded w-[270px]"></span>
+          </h2>
+          <ul className="flex flex-wrap gap-4">
+            <li className="flex items-center gap-2 px-4 py-2 rounded shadow-lg font-bold bg-white text-xl">
+              ChatGPT
+            </li>
+            <li className="flex items-center gap-2 px-4 py-2 rounded shadow-lg font-bold bg-white text-xl">
+              GitHub Copilot
+            </li>
+            <li className="flex items-center gap-2 px-4 py-2 rounded shadow-lg font-bold bg-white text-xl">
+              Cursor
+            </li>
+            <li className="flex items-center gap-2 px-4 py-2 rounded shadow-lg font-bold bg-white text-xl">
+              Grok
+            </li>
+            <li className="flex items-center gap-2 px-4 py-2 rounded shadow-lg font-bold bg-white text-xl">
+              Gemini
+            </li>
+            <li className="flex items-center gap-2 px-4 py-2 rounded shadow-lg font-bold bg-white text-xl">
+              Claude
+            </li>
+            <li className="flex items-center gap-2 px-4 py-2 rounded shadow-lg font-bold bg-white text-xl">
+              NotebookLM
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }
